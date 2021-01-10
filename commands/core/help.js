@@ -13,7 +13,7 @@ module.exports = {
                 embed: {
                     color: 'BLUE',
                     author: { name: 'Help panel' },
-                    footer: { name: 'Credits to !Zerio.js#0001' },
+                    footer: { text: 'Credits to !Zerio.js#0001' },
                     fields: [
                         { name: 'Bot', value: infos },
                         { name: 'Music', value: music },
