@@ -1,4 +1,4 @@
-const client = require('discord.js');
+const client = new discord.Client({ disableMentions: 'everyone' });
 
 module.exports = {
     emojis: {
