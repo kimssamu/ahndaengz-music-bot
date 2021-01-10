@@ -9,7 +9,7 @@ module.exports = {
 
     discord: {
         prefix: '`',
-        activity: 'with you',
+        activity: '${client.guilds.cache.size}!',
     },
 
     filters: ['8D', 'gate', 'haas', 'phaser', 'treble', 'tremolo', 'vibrato', 'reverse', 'karaoke', 'flanger', 'mcompand', 'pulsator', 'subboost', 'bassboost', 'vaporwave', 'nightcore', 'normalizer', 'surrounding'],
