@@ -11,7 +11,7 @@ module.exports = {
 
             message.channel.send({
                 embed: {
-                    color: 'ORANGE',
+                    color: 'BLUE',
                     author: { name: 'Help panel' },
                     fields: [
                         { name: 'Bot', value: infos },
@@ -29,7 +29,7 @@ module.exports = {
 
             message.channel.send({
                 embed: {
-                    color: 'ORANGE',
+                    color: 'BLUE',
                     author: { name: 'Help panel' },
                     fields: [
                         { name: 'Name', value: command.name, inline: true },
