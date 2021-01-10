@@ -12,8 +12,7 @@ module.exports = {
             message.channel.send({
                 embed: {
                     color: 'ORANGE',
-                    author: { name: 'Help pan
-nel' },
+                    author: { name: 'Help panel' },
                     fields: [
                         { name: 'Bot', value: infos },
                         { name: 'Music', value: music },
