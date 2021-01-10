@@ -7,6 +7,8 @@ module.exports = {
         success: ':white_check_mark:',
     },
 
+        execute(client)
+
     discord: {
         prefix: '*',
         activity: `${client.guilds.cache.size}!`,
