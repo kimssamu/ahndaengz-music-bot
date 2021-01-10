@@ -17,7 +17,7 @@ module.exports = {
                         { name: 'Bot', value: infos },
                         { name: 'Music', value: music },
                         { name: 'Filters', value: client.filters.map((x) => '`' + x + '`').join(', ') },
-                        { name: 'Learn more about the bot', value: [Source Code](https://github.com/kimssamu/Music-bot), inline: true }
+                        { name: 'Learn more about the bot', value: [Source Code](https://github.com/kimssamu/Music-bot), inline: true },
                     ],
                     timestamp: new Date(),
                     description: `To use filters, ${client.config.discord.prefix}filter (the filter). Example : ${client.config.discord.prefix}filter 8D.`,
