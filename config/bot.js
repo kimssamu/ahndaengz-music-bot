@@ -12,7 +12,7 @@ module.exports = {
 
     discord: {
         prefix: '*',
-        activity: `${client.guilds.cache.size}!`,
+        activity: `with ${client.guilds.cache.size} servers!`,
     },
 
     filters: ['8D', 'gate', 'haas', 'phaser', 'treble', 'tremolo', 'vibrato', 'reverse', 'karaoke', 'flanger', 'mcompand', 'pulsator', 'subboost', 'bassboost', 'vaporwave', 'nightcore', 'normalizer', 'surrounding'],
