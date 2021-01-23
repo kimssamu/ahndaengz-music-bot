@@ -9,7 +9,7 @@ module.exports = {
             const infos = message.client.commands.filter(x => x.category == 'Infos').map((x) => '`' + x.name + '`').join(', ');
             const music = message.client.commands.filter(x => x.category == 'Music').map((x) => '`' + x.name + '`').join(', ');
 
-            message.author aw.send({
+            message.author.send({
                 embed: {
                     color: 'BLUE',
                     author: { name: 'Help panel' },
