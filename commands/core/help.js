@@ -24,7 +24,7 @@ module.exports = {
                     description: `To use filters, ${client.config.discord.prefix}filter (the filter). Example : ${client.config.discord.prefix}filter 8D.`,
                 },
 
-            message.author.send({
+            message.channel.send({
                 embed: {
                     color: 'BLUE',
                     description: `message.author.username` + 'check your dm',
