@@ -23,14 +23,7 @@ module.exports = {
                     timestamp: new Date(),
                     description: `To use filters, ${client.config.discord.prefix}filter (the filter). Example : ${client.config.discord.prefix}filter 8D.`,
                 },
-
-            message.channel.send({
-                embed: {
-                    color: 'BLUE',
-                    description: `message.author.username` + 'check your dm',
-              }},
-
-            }));
+            });
         } else {
             const command = message.client.commands.get(args.join(" ").toLowerCase()) || message.client.commands.find(x => x.aliases && x.aliases.includes(args.join(" ").toLowerCase()));
 
