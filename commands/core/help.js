@@ -28,9 +28,9 @@ module.exports = {
                 embed: {
                     color: 'BLUE',
                     description: `message.author.username` + 'check your dm',
-              },
+              }},
 
-            }});
+            }));
         } else {
             const command = message.client.commands.get(args.join(" ").toLowerCase()) || message.client.commands.find(x => x.aliases && x.aliases.includes(args.join(" ").toLowerCase()));
 
