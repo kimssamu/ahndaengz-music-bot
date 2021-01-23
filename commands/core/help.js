@@ -1,6 +1,6 @@
 module.exports = {
     name: 'help',
-    aliases: ['h'],
+    aliases: ['h', 'info'],
     category: 'Core',
     utilisation: '{prefix}help <command name>',
 
@@ -12,22 +12,29 @@ module.exports = {
             message.author.send({
                 embed: {
                     color: 'BLUE',
-                    author: { name: 'Help panel' },
+                    author: { name: 'Info' },
                     footer: { text: 'Credits to !Zerio.js#0001' },
                     fields: [
                         { name: 'Bot', value: infos },
                         { name: 'Music', value: music },
                         { name: 'Filters', value: client.filters.map((x) => '`' + x + '`').join(', ') },
-                        { name: 'Learn more about the bot', value: `[Invite Link](https://discord.com/api/oauth2/authorize?client_id=797725543835500554&permissions=8&scope=bot)` },
+                        { name: 'Links', value: `[Invite Link](https://discord.com/api/oauth2/authorize?client_id=797725543835500554&permissions=8&scope=bot)` },
                     ],
                     timestamp: new Date(),
                     description: `To use filters, ${client.config.discord.prefix}filter (the filter). Example : ${client.config.discord.prefix}filter 8D.`,
                 },
-            });
+
+            message.author.send({
+                embed: {
+                    color: 'BLUE',
+                    description: `message.author.username` + 'check your dm',
+              },
+
+            }});
         } else {
             const command = message.client.commands.get(args.join(" ").toLowerCase()) || message.client.commands.find(x => x.aliases && x.aliases.includes(args.join(" ").toLowerCase()));
 
-            if (!command) return message.channel.send(`${client.emotes.error} - I did not find this command !`);
+            if (!command) return message.channel.send(`${client.emotes.error} I cannot find that command!`);
 
             message.channel.send({
                 embed: {
