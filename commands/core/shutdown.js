@@ -8,7 +8,6 @@ module.exports = {
 
         message.channel.send("Shutting down...").then(() => {
             client.destroy();
-            };
-          };
+            }
+          }
      });
-);
